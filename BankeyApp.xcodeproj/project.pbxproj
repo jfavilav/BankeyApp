@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		15B1228427C9702B0031E76C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B1228327C9702B0031E76C /* AppDelegate.swift */; };
-		15B1228827C9702B0031E76C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B1228727C9702B0031E76C /* ViewController.swift */; };
+		15B1228827C9702B0031E76C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B1228727C9702B0031E76C /* LoginViewController.swift */; };
 		15B1228D27C9702D0031E76C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15B1228C27C9702D0031E76C /* Assets.xcassets */; };
 		15B1229027C9702D0031E76C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15B1228E27C9702D0031E76C /* LaunchScreen.storyboard */; };
+		15B1229B27C9775B0031E76C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B1229A27C9775B0031E76C /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		15B1228027C9702B0031E76C /* BankeyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankeyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B1228327C9702B0031E76C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		15B1228727C9702B0031E76C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15B1228727C9702B0031E76C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		15B1228C27C9702D0031E76C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15B1228F27C9702D0031E76C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15B1229127C9702D0031E76C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15B1229A27C9775B0031E76C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +54,38 @@
 		15B1228227C9702B0031E76C /* BankeyApp */ = {
 			isa = PBXGroup;
 			children = (
+				15B1229827C977200031E76C /* ui */,
+				15B1229727C976E00031E76C /* files */,
 				15B1228327C9702B0031E76C /* AppDelegate.swift */,
-				15B1228727C9702B0031E76C /* ViewController.swift */,
+			);
+			path = BankeyApp;
+			sourceTree = "<group>";
+		};
+		15B1229727C976E00031E76C /* files */ = {
+			isa = PBXGroup;
+			children = (
 				15B1228C27C9702D0031E76C /* Assets.xcassets */,
 				15B1228E27C9702D0031E76C /* LaunchScreen.storyboard */,
 				15B1229127C9702D0031E76C /* Info.plist */,
 			);
-			path = BankeyApp;
+			name = files;
+			sourceTree = "<group>";
+		};
+		15B1229827C977200031E76C /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				15B1229927C977370031E76C /* login */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		15B1229927C977370031E76C /* login */ = {
+			isa = PBXGroup;
+			children = (
+				15B1228727C9702B0031E76C /* LoginViewController.swift */,
+				15B1229A27C9775B0031E76C /* LoginView.swift */,
+			);
+			name = login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,7 +158,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15B1228827C9702B0031E76C /* ViewController.swift in Sources */,
+				15B1229B27C9775B0031E76C /* LoginView.swift in Sources */,
+				15B1228827C9702B0031E76C /* LoginViewController.swift in Sources */,
 				15B1228427C9702B0031E76C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
